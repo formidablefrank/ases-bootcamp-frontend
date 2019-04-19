@@ -1,0 +1,83 @@
+/* Import fonts */
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-Bold.otf');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/OpenSans-Regular.ttf');
+}
+
+/* Define font families for text */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat';
+}
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.backToTop {
+  position: fixed;
+  z-index: 10;
+  bottom: 20px;
+  right: 20px;
+}
+
+.banner {
+  color: white;
+  background-color: #140d54;
+  padding: 120px 0px;
+}
+
+#mission {
+  margin-top: 0px;
+  margin-bottom: 40px;
+}
+
+.event {
+  border: 2px dotted #dedede;
+  padding: 15px 0px;
+  margin: 20px 0px;
+}
+
+.carousel {
+  height: 100vh;
+  margin-top: 30px;
+}
+
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 100vh;
+  background-color: #777;
+}
+
+.carousel-inner>.item>img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+
+#apply {
+  border-top: 10px solid lightpink;
+  padding: 50px 0px;
+  color: white;
+  background-color: #ee727b;
+}
+
+.footer {
+  border-top: 5px solid #3375da;
+  padding: 20px 0;
+  color: white;
+  background-color: #140d54;
+}
